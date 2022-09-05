@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>動画再生チェック</title>
+
+	<style>
+		li{
+			margin-bottom: 2rem;
+		}
+		video{
+			display: block;
+			max-width: 300px;
+			border: 1px solid gray;
+		}
+	</style>
+</head>
+<body>
+	<div class="item">
+		<ul>
+			<li>
+				<input id="file-input" type="file" accept="video/*">
+				<video id="file-show" src="" controls></video>
+			</li>
+			<li>.mpg mpeg2 <video src="/assets/mpeg2.mpg" controls></video></li>
+			<li>.mp4 h264/AAC <video src="/assets/h264.mp4" controls></video></li>
+			<li>.mp4 h265/HEVC <video src="/assets/h265.mp4" controls></video></li>
+			<li>.mov quicktime <video src="/assets/quicktime.mov" controls></video></li>
+			<li>.webm <video src="/assets/webm.webm" controls></video></li>
+			<li>.avi <video src="/assets/avi.avi" controls></video></li>
+			<li>.mkv (h264)<video src="/assets/mkv.mkv" controls></video></li>
+		</ul>
+	</div>
+	<script src="/main.js"></script>
+</body>
+</html>
